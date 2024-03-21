@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSV to JS array</title>
     <style>
-        body {
-            background-color: slategrey;
-        }
+      body {
+        background-color: slategrey;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <input type="file" id="fileInput">
+  <body>
+    <input type="file" id="fileInput" />
     <script>
-        let csvAsJsArray = []
+      let csvAsJsArray = [];
 
-        const fileInput = document.getElementById('fileInput');
-        fileInput.addEventListener('change', (e) => {
-            const file = e.target.files[0];
-            const reader = new FileReader();
+      const fileInput = document.getElementById("fileInput");
+      fileInput.addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        const reader = new FileReader();
 
-            reader.onload = (event) => {
-                const csvData = event.target.result;
-                // Process the CSV data here
-                const lines = csvData.split('\n');
-                lines.shift(); lines.pop(); // This removes the header row and last empty row
-                for (var row of lines) {
-                    var row = row.split(', ');
-                    csvAsJsArray.push({
-                        "name": row[0],
-                        "latitude": row[1],
-                        "longitude": row[2]
-                    }); // We pushed a dictionary with the name of the place, latitude and longitude
-                }
-            };
+        reader.onload = (event) => {
+          const csvData = event.target.result;
+          // Process the CSV data here
+          const lines = csvData.split("\n");
+          lines.shift();
+          lines.pop(); // This removes the header row and last empty row
+          for (var row of lines) {
+            var row = row.split(", ");
+            csvAsJsArray.push({
+              name: row[0],
+              latitude: row[1],
+              longitude: row[2],
+            }); // We pushed a dictionary with the name of the place, latitude and longitude
+          }
+        };
 
-            reader.readAsText(file);
-            console.log(csvAsJsArray);
-
-        });
+        reader.readAsText(file);
+        console.log(csvAsJsArray);
+      });
     </script>
-</body>
-
+  </body>
 </html>
