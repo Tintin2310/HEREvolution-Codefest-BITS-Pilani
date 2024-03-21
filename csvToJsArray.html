@@ -24,11 +24,11 @@
         reader.onload = (event) => {
           const csvData = event.target.result;
           // Process the CSV data here
-          const lines = csvData.split("\n");
+          const lines = csvData.split("\r\n");
           lines.shift();
           lines.pop(); // This removes the header row and last empty row
           for (var row of lines) {
-            var row = row.split(", ");
+            var row = row.split(",");
             csvAsJsArray.push({
               name: row[0],
               latitude: row[1],
