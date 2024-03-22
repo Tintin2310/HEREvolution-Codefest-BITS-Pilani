@@ -1,5 +1,7 @@
 import { hereApiKey } from "./secrets.js";
-import { airports } from "./airports.js"
+// import { touristPlaces } from "./touristPlaces.js"
+// import { airports } from "./airports.js"
+import { touristPlaces } from "./touristPlaces.js";
 
 function startClustering(map, data) {
     // First we need to create an array of DataPoint objects,
@@ -12,7 +14,7 @@ function startClustering(map, data) {
     var clusteredDataProvider = new H.clustering.Provider(dataPoints, {
       clusteringOptions: {
         // Maximum radius of the neighbourhood
-        eps: 32,
+        eps: 30,
         // minimum weight of points required to form a cluster
         minWeight: 2
       }
@@ -39,8 +41,8 @@ var map = new H.Map(
     document.getElementById('mapContainer'),
     maptypes.vector.normal.map,
     {
-        zoom: 10,
-        center: { lng: 80.02761096406752, lat: 13.263153083954851  }, //13.263153083954851, 80.02761096406752
+        zoom: 4.7,
+        center: { lng: 78.9629, lat: 22.6000  }, //20.5937° N, 78.9629° E
         pixelRatio: window.devicePixelRatio || 1
     });
 
@@ -52,4 +54,4 @@ var behavior = new H.mapevents.Behavior(mapEvents);
 
 window.addEventListener('resize', () => map.getViewPort().resize());
 
-startClustering(map, airports);
+startClustering(map, touristPlaces);
