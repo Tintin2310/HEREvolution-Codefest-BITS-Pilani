@@ -64,3 +64,29 @@ body {
 .logo {
   height: 50px;
 }
+
+.center {
+  width: 900px;
+  margin: 200px auto 0px auto;
+}
+
+.auth-page{
+  background-color: #333;
+  color: #ccc;
+}
+
+.btn{
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: #ccc;
+}
+
+.btn:hover{
+  background-color: #429b45;
+  border-color: #429b45;
+  color: #ccc;
+}
+
+.login-btn{
+  color: #ccc;
+}
