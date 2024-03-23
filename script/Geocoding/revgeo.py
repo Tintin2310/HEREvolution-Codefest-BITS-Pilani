@@ -32,7 +32,7 @@ if __name__ == "__main__":
     latitude = input("Enter latitude: ")
     longitude = input("Enter longitude: ")
     
-    api_key = "2cZ7xfA3Llz9XDWjBbiyN45X8hFgcs0fBYFYnd0Xm0A"
+    api_key = ""
 
     # Call the reverse_geocode function to get the address
     address = reverse_geocode(latitude, longitude, api_key)
