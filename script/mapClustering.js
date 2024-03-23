@@ -8,10 +8,10 @@ function startClustering(map, data) {
       return new H.clustering.DataPoint(item.latitude, item.longitude);
     });
   
-    // Create a clustering provider with custom options for clusterizing the input
+    // Create a clustering provider with custom options for clustering the input
     var clusteredDataProvider = new H.clustering.Provider(dataPoints, {
       clusteringOptions: {
-        // Maximum radius of the neighbourhood
+        // Maximum radius of the neighborhood
         eps: 30,
         // minimum weight of points required to form a cluster
         minWeight: 2
@@ -21,7 +21,7 @@ function startClustering(map, data) {
     // Create a layer tha will consume objects from our clustering provider
     var clusteringLayer = new H.map.layer.ObjectLayer(clusteredDataProvider);
   
-    // To make objects from clustering provder visible,
+    // To make objects from clustering provider visible,
     // we need to add our layer to the map
     map.addLayer(clusteringLayer);
   }
