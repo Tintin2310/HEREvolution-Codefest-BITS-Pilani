@@ -33,7 +33,7 @@ def geocode(address, api_key):
 df = pd.read_csv("Places.csv")  # Replace "your_dataset.csv" with your actual file name
 
 # HERE API key
-api_key = "2cZ7xfA3Llz9XDWjBbiyN45X8hFgcs0fBYFYnd0Xm0A"
+api_key = ""
 
 # List to store latitude and longitude
 latitudes = []
