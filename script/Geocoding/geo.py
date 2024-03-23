@@ -37,7 +37,7 @@ if __name__ == "__main__":
     # Get address from user input
     address = input("Enter the address to geocode: ")
 
-    api_key = "2cZ7xfA3Llz9XDWjBbiyN45X8hFgcs0fBYFYnd0Xm0A"
+    api_key = ""
 
     # Call the geocode function to get the latitude and longitude
     latitude, longitude = geocode(address, api_key)
