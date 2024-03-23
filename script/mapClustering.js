@@ -1,6 +1,4 @@
 import { hereApiKey } from "./secrets.js";
-// import { touristPlaces } from "./touristPlaces.js"
-// import { airports } from "./airports.js"
 import { touristPlaces } from "./touristPlaces.js";
 
 function startClustering(map, data) {

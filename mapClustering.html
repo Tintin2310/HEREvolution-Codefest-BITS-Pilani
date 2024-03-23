@@ -30,27 +30,21 @@
       type="text/javascript"
     ></script>
 
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-        height: 100vh;
-        width: 100vw;
-      }
-      #mapContainer {
-        height: 100%;
-        width: 100%;
-      }
-      @media only screen and (max-width: 768px) {
-        #mapContainer {
-          height: 94%;
-          width: 100%;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
   </head>
 
   <body>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="logo-container">
+          <img src="path/to/your/logo.png" alt="Logo" class="logo" />
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Search..." class="search-input" />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
     <div id="mapContainer"></div>
     <script type="module" src="./script/mapClustering.js"></script>
   </body>
