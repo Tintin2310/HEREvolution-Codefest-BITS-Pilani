@@ -97,7 +97,7 @@
             // Add a marker for each location found
             result.items.forEach((item) => {
               map.addObject(new H.map.Marker(item.position));
-              //map.setCenter(item.position);
+              map.setCenter(item.position);
               console.log(item.position.lat, item.position.lng);
             });
           },
