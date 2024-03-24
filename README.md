@@ -37,7 +37,7 @@ git clone https://github.com/Tintin2310/HEREvolution-Codefest-BITS-Pilani.git
 ```
 
 2. **Install Dependencies**: Navigate to the project directory and install any necessary dependencies. For this project, the dependencies are primarily JavaScript libraries and CSS frameworks. These are included in the project and do not require additional installation.
-3. **Configure API Keys**: The application uses the HERE Maps API for geocoding and mapping functionalities. You will need to obtain an API key from the HERE Developer Portal and configure it in the project. Open the `index.html` file and replace `YOUR_API_KEY` with your actual API key in the following script tags.
+3. **Configure API Keys**: The application uses the HERE Maps API for geocoding and mapping functionalities. You will need to obtain an API key from the HERE Developer Portal and configure it in the project. Open the `script.js` file and replace `hereApiKey` with your actual API key in the following script tags.
 4. **Firebase Setup**: To use Firebase Authentication, you need to set up a Firebase project and obtain your Firebase configuration. Follow the Firebase documentation to set up your project and add your configuration to the `Authentication.html` file.
 5. **Run the Application**: Open the `index.html` file in your preferred web browser to start using Here&There. The application should load, and you can begin exploring locations and features.
 
