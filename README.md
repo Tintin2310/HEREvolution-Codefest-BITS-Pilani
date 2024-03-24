@@ -1,4 +1,6 @@
-# Here&There
+<img src="./Resources/logo.png" height=100>
+
+# Here&There  
 
 ## Discover the World at Your Fingertips
 
