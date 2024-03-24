@@ -90,3 +90,16 @@ body {
 .login-btn{
   color: #ccc;
 }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+ .logo-image {
+  display: block;
+  width: 200px;
+  height: 200px;
+ }
