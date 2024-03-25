@@ -12,8 +12,8 @@ Here&There is a web application designed to enhance the way users explore and in
 
 ### Key Features
 
-- **Geocoding and Reverse Geocoding**: Users can search for locations by name or coordinates, and the application can also provide the coordinates of a searched location.
-- **Tourist Attractions**: Display a list of tourist attractions in a selected area, complete with descriptions and images.
+- **Geocoding and Reverse Geocoding**: Users can search for locations by name.
+- **Tourist Attractions**: Display a list of tourist attractions in a selected area.
 - **Map Clustering**: Visualize data points on the map with clustering, making it easier to identify areas of interest.
 - **Firebase Authentication**: Utilizes Firebase for user authentication, providing secure login and signup functionalities.
 
